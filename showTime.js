@@ -17,6 +17,7 @@ function showTime() {
     s = s < 10 ? "0" + s : s;
     let time = h + ":" + m + ":" + s + " " + session;
     document.getElementById("clockDisplay").textContent = time;
+    document.getElementById("clockDisplaySameSize").textContent = time;
     setTimeout(showTime, 1000);
 }
 
